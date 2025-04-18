@@ -36,9 +36,23 @@ public class Notes {
         Person secondPerson = new Person("Makayla", 25);
 
         System.out.println(firstPerson.getName());
-        firstPerson.setName("JoJo");
+//        firstPerson.setName("JoJo");
+//
+//        System.out.println(firstPerson.getEnergy());
+        System.out.println(firstPerson.getEnergy());
 
-        System.out.println(firstPerson.getName());
+        firstPerson.work(5);
+
+        System.out.println(firstPerson.getEnergy());
+
+        firstPerson.eat();
+
+        System.out.println(firstPerson.getEnergy());
+
+        firstPerson.greet();
+
+
+
 
     }
 }
