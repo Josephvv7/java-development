@@ -8,15 +8,13 @@ public class Mkpayroll {
     Scanner scanner = new Scanner(System.in);
     ArrayList<Employee> employees = new ArrayList<>();
 
-    // Initialize the 5 fixed employees
-    employees.add(new Employee("John Smith"));
-    employees.add(new Employee("Emily Johnson"));
-    employees.add(new Employee("Michael Williams"));
-    employees.add(new Employee("Sarah Brown"));
+    // Initialize the 2 fixed employees
+    employees.add(new Employee("Garrett Thompson"));
+    employees.add(new Employee("Alison Worland"));
 
-    // The 5th employee with fixed address
-    Address fixedAddress = new Address("50-57 48th Street", "Woodside, New York", "NY", "11377");
-    employees.add(new Employee("Robert Davis", fixedAddress));
+    // The 3rd employee with fixed address
+    Address fixedAddress = new Address("110 Fiddler Road", "Stratford", "CN", "06614");
+    employees.add(new Employee("Ilya Gofman", fixedAddress));
 
     System.out.println("Payroll Application");
     System.out.println("-------------------");

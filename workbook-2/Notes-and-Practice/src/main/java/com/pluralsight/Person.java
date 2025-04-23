@@ -1,15 +1,18 @@
 package com.pluralsight;
 
+//Making a class, these are the attributes:
 public class Person {
     private String name;
     private int age;
     private int energy;
 
+    // Making a constructor, constructor helps create an object from a class.
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
         this.energy = 100;
     }
+    // Getters and Setters
         public String getName() {
             return this.name;
         }
