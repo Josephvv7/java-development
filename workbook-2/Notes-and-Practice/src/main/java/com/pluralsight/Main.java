@@ -1,22 +1,21 @@
 package com.pluralsight;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 public class Main {
     public static void main(String[] args) {
         /* int i = 0;
         while (i < 10) {
             System.out.println(i);
             i++;
-        }*/
-
-
-        System.out.println("========================================");
-
+        }
+        System.out.println("========================================");*/
         /*for (int i = 0; i < 10; i++) {
             System.out.println(i);
-        }*/
+        }
 
-        System.out.println("========================================");
-
+        System.out.println("========================================");*/
         //int sum = 0;
         //int i = 0;
 
@@ -96,27 +95,36 @@ public class Main {
 //
 //            System.out.println("High");
 
-        int x = 50;
+//        int x = 50;
+//
+//        if (x = 50) {
+//
+//            System.out.println("x is equal to 50");
+//
+//        } else {
+//
+//            System.out.println("x is not equal to 50");
+//
+//        }
 
-        if (x = 50) {
+        try {
 
-            System.out.println("x is equal to 50");
+            FileWriter fileWriter = new FileWriter("potato.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
-        } else {
+            String numText;
 
-            System.out.println("x is not equal to 50");
+            for (int i = 1; i <= 10; i++) {
+                numText = String.format("Counting %d\n", i);
 
+                bufferedWriter.write(numText);
+            }
+
+            bufferedWriter.close();
+        } catch (Exception e) {
+            System.out.println("Error occurred");
         }
 
-
-
-
-
-
-
-
-
-
-
-    }}
+    }
+}
 

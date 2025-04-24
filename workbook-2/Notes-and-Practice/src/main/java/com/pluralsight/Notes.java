@@ -30,29 +30,54 @@ package com.pluralsight;
 //
 //        System.out.println(userDate);
 //        Scanner scanner = new Scanner(System.in);
-public class Notes {
-    public static void main(String[] args) {
-        Person firstPerson = new Person("Joseph", 25);
-        Person secondPerson = new Person("Makayla", 25);
-
-        System.out.println(firstPerson.getName());
-//        firstPerson.setName("JoJo");
+//        Person firstPerson = new Person("Joseph", 25);
+//        Person secondPerson = new Person("Makayla", 25);
+//
+//        System.out.println(firstPerson.getName());
+//       firstPerson.setName("JoJo");
 //
 //        System.out.println(firstPerson.getEnergy());
-        System.out.println(firstPerson.getEnergy());
+//        System.out.println(firstPerson.getEnergy());
+//
+//        firstPerson.work(5);
+//
+//        System.out.println(firstPerson.getEnergy());
+//
+//        firstPerson.eat();
+//
+//        System.out.println(firstPerson.getEnergy());
+//
+//        firstPerson.greet();
 
-        firstPerson.work(5);
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.util.Scanner;
 
-        System.out.println(firstPerson.getEnergy());
+public class Notes {
+    public static void main(String[] args) {
+        try {
+            FileWriter writer = new FileWriter( "potato.txt");
 
-        firstPerson.eat();
+            writer.write("Hello Everyone\n");
+            writer.write("My name is Potato and I am your instructor!\n");
+            writer.write("Welcome to the Java Bootcamp!");
 
-        System.out.println(firstPerson.getEnergy());
+//            FileInputStream fis = new FileInputStream("poem.txt");
+//            Scanner scanner = new Scanner(fis);
+//
+//            String line;
+//
+//            while(scanner.hasNextLine()) {
+//                line = scanner.nextLine();
+//                System.out.println(line);
+//                }
+//            scanner.close();
 
-        firstPerson.greet();
+            writer.close();
 
-
-
-
+        } catch (Exception e) {
+            System.out.println("Something went wrong!");
+        }
     }
 }

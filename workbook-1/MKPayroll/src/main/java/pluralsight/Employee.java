@@ -1,4 +1,4 @@
-package com.pluralsight;
+package pluralsight;
 
 public class Employee {
     private int employeeId;
@@ -7,7 +7,7 @@ public class Employee {
     private double payRate;
     private String Address;
 
-    public Employee(int id, String name, double hours, double rate) {
+    public Employee(int id, String name, double hours, double rate, String address) {
         this.employeeId = id;
         this.employeeName = name;
         this.hoursWorked = hours;
@@ -96,4 +96,6 @@ public class Employee {
     public double getGrossPay() {
         return hoursWorked * payRate;
     }
+
+
 }
