@@ -107,23 +107,33 @@ public class Main {
 //
 //        }
 
-        try {
+//        try {
+//            FileWriter fileWriter = new FileWriter("potato.txt");
+//            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+//
+//            String numText;
+//
+//            for (int i = 1; i <= 10; i++) {
+//                numText = String.format("Counting %d\n", i);
+//
+//                bufferedWriter.write(numText);
+//            }
+//
+//            bufferedWriter.close();
+//        } catch (Exception e) {
+//            System.out.println("Error occurred");
+//        }
 
-            FileWriter fileWriter = new FileWriter("potato.txt");
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        Person personRay = new Person();
+        personRay.setFirstName("Joseph");
+        personRay.setLastName("Valencia");
+        personRay.setAge(25);
 
-            String numText;
+        Person person2 = new Person();
 
-            for (int i = 1; i <= 10; i++) {
-                numText = String.format("Counting %d\n", i);
+        Car newCar = new Car (0, "Yellow", "Potato Car");
 
-                bufferedWriter.write(numText);
-            }
 
-            bufferedWriter.close();
-        } catch (Exception e) {
-            System.out.println("Error occurred");
-        }
 
     }
 }

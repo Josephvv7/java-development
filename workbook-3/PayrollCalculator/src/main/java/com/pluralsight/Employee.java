@@ -5,14 +5,14 @@ public class Employee {
     private String employeeName;
     private double hoursWorked;
     private double payRate;
-    private String Address;
+//    private String Address;
 
     public Employee(int id, String name, double hours, double rate) {
         this.employeeId = id;
         this.employeeName = name;
         this.hoursWorked = hours;
         this.payRate = rate;
-        this.Address = address;
+//        this.Address = address;
     }
 
     public int getEmployeeId() {
@@ -47,13 +47,13 @@ public class Employee {
         this.payRate = payRate;
     }
 
-    public String getAddress() {
-        return Address;
-    }
-
-    public void setAddress(String address) {
-        this.Address = address;
-    }
+//    public String getAddress() {
+//        return Address;
+//    }
+//
+//    public void setAddress(String address) {
+//        this.Address = address;
+//    }
 //    public Employee(int id, String name, double hours, double rate) {
 //        this.employeeId = id;
 //        this.employeeName = name;
